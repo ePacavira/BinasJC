@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgco"
+    android:background="@drawable/backg"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -25,17 +25,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:src="@drawable/b_menu"/>
+            android:src="@drawable/b_arrow_back"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="568dp"
+        android:gravity="center"
         android:orientation="vertical"
         android:padding="68dp"
-        android:gravity="center"
         tools:ignore="MissingConstraints">
+
 
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="97dp"
@@ -44,26 +45,39 @@
             android:src="@drawable/b_person"
             app:shapeAppearanceOverlay="@style/circular" />
 
-        <TextView
+        <View
             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-            android:text="Eliane Watele"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif-medium"
-            android:textSize="42sp"
-            android:textColor="@color/white"/>
+            android:layout_height="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="26dp"
             android:alpha="0.7"
-            android:text="Vamos a mais uma Aventura!!"
             android:gravity="center"
+            android:textStyle="bold"
+            android:text="ID:20210847"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Eliane Watele"
+            android:textColor="@color/white"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="quetura@gmail.com"
             android:textColor="@color/white" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
             android:gravity="center"
             tools:ignore="ExtraText">
 
@@ -72,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:text="1000 Pts"
                 android:textColor="@color/white"
-                android:textSize="32sp"
+                android:textSize="45sp"
                 android:textStyle="bold" />
 
             <View
@@ -88,11 +102,12 @@
 
         </LinearLayout>
 
+
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="180dp"
         android:layout_alignParentBottom="true"
         app:cardCornerRadius="28dp"
         android:layout_marginBottom="-20dp"
@@ -100,62 +115,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="125dp"
+            android:layout_height="171dp"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="28dp">
 
-            <RelativeLayout
-                android:layout_width="236dp"
-                android:layout_height="60dp">
-
-                <ImageView
-                    android:layout_width="59dp"
-                    android:layout_height="48dp"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/b_message" />
-                />
-
-                <ImageView
-                    android:layout_width="63dp"
-                    android:layout_height="52dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/b_bike" />
-                />
-
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp" />
-
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="276dp"
-                android:layout_height="24dp">
-
-
-                <TextView
-                    android:layout_width="94dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Chat" />
-
-                <TextView
-                    android:layout_width="104dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="0dp"
-                    android:gravity="center"
-                    android:text="Reservar Bike" />
-
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp" />
-
-
-            </RelativeLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Editar dados do Perfil"
+                app:cornerRadius="32dp" />
 
         </LinearLayout>
 
